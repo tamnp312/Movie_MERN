@@ -1,9 +1,10 @@
-const express = require('express');
-require('dotenv').config();
-const morgan = require('morgan');
-const cors = require('cors');
-const routers = require('./routers');
-const connectDB = require('./config/db');
+import express from 'express';
+import dotenv from 'dotenv';
+dotenv.config();
+import morgan from 'morgan';
+import cors from 'cors';
+import routers from './routers/index.js';
+import connectDB from './config/db.js';
 
 const PORT = process.env.PORT || 8080;
 

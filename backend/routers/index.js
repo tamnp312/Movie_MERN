@@ -1,7 +1,8 @@
 
-const userRouter = require('./userRouter');
-const movieRouter = require('./movieRouter');
-const categoriesRouter = require('./categoriesRouter');
+import userRouter from './userRouter.js';
+// import movieRouter from './movieRouter.js';
+// import categoriesRouter from './categoriesRouter.js';
+
 
 
 const routers = (app) => {
@@ -10,4 +11,4 @@ const routers = (app) => {
     // app.use('/categories', categoriesRouter);
 }
 
-module.exports = routers;
+export default routers;
